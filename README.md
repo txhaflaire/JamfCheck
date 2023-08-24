@@ -1,6 +1,6 @@
 # JamfCheck
 
-The "JamfCheck" is a macOS app that allows you to easily run a couple of check's for Jamf Pro, Jamf Connect and Jamf Protect in a single app.
+The "JamfCheck" is a Apple code-signed and notarized macOS app that allows you to easily run a couple of check's for Jamf Pro, Jamf Connect and Jamf Protect in a single app.
 
 You can find the latest version in the [releases](https://github.com/txhaflaire/JamfCheck/releases) section
 
