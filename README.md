@@ -4,6 +4,8 @@ The "JamfCheck" is a macOS app that allows you to easily run a couple of check's
 
 You can find the latest version in the [releases](https://github.com/txhaflaire/JamfCheck/releases) section
 
+<img width="256" alt="AppIcon" src="./Images/AppIcon.png">
+
 #### Requirements
 
 - A Mac running macOS Ventura (13.0) or higher
