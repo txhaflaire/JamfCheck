@@ -1,5 +1,7 @@
 # JamfCheck
 
+![](https://img.shields.io/badge/macOS-10.13%2B-success)&nbsp;![GitHub all releases](https://img.shields.io/github/downloads/txhaflaire/JamfCheck/total)&nbsp;![GitHub](https://img.shields.io/github/license/txhaflaire/JamfCheck)
+
 The "JamfCheck" is a Apple code-signed and notarized macOS app that allows you to easily run a couple of check's for Jamf Pro, Jamf Connect and Jamf Protect in a single app.
 
 You can find the latest version in the [releases](https://github.com/txhaflaire/JamfCheck/releases) section
@@ -29,7 +31,6 @@ Data is automatically being fetch each 30 seconds, or alternatively can be refre
 
 #### Known Issues / to be improved
 These are known issues or areas that is still in development
-    - Jamf Pro Logs is not finalised yet
     - Improving resource usage once Log Stream is being used
 
 The app does log to Unified Logging. You can view the logs like this:
