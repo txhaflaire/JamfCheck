@@ -16,6 +16,7 @@ You can find the latest version in the [releases](https://github.com/txhaflaire/
 At launch the app requires to you make a selection in the NavigationView, select either
   - ###### Jamf Pro
     - Displays Checks that are related to Jamf Pro
+    - Show and Export Jamf Pro logs
 
   - ###### Jamf Connect
       - Displays Checks that are related to Jamf Connect
