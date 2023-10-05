@@ -17,7 +17,7 @@ At launch the app requires to you make a selection in the NavigationView, select
   - ###### Jamf Pro
     - Displays Checks that are related to Jamf Pro
     - Show and Export Jamf Pro logs
-    - Jamf Network Test
+    - Jamf Network Test, providing an option to export results to CSV as well
 
   - ###### Jamf Connect
       - Displays Checks that are related to Jamf Connect
@@ -47,6 +47,8 @@ The app does log to Unified Logging. You can view the logs like this:
 <img width="1027" alt="JamfCheckAutoUpdate" src="./Images/JamfCheckAutoUpdate.png">
 *JamfCheck for Jamf Pro*
 <img width="1027" alt="JamfCheck" src="./Images/JamfCheck.png">
+*JamfCheck for Jamf Pro and running a Network Test*
+<img width="1027" alt="JamfCheckNetworkTest" src="./Images/JamfCheckNetworkTest.png">
 *JamfCheck for Jamf Connect*
 <img width="1027" alt="JamfCheckLight" src="./Images/JamfCheckLight.png">
 *JamfCheck for Jamf Protect*
