@@ -17,6 +17,7 @@ At launch the app requires to you make a selection in the NavigationView, select
   - ###### Jamf Pro
     - Displays Checks that are related to Jamf Pro
     - Show and Export Jamf Pro logs
+    - Jamf Network Test
 
   - ###### Jamf Connect
       - Displays Checks that are related to Jamf Connect
@@ -25,7 +26,8 @@ At launch the app requires to you make a selection in the NavigationView, select
   - ###### Jamf Protect
     - Displays Checks that are related to Jamf Protect
     - Show or Stream and Export logs from Jamf Protect
-    - Generate and executate EICAR for Threat Prevention test
+    - Provides a way to test Threat Prevention by generating and executing an EICAR test
+    - Provides a way to test Analytics for Jamf Protect by creating a LaunchAgent
     - Test connectivity to SIEM/Webhook solutions using HTTP
   
 Data is automatically being fetch each 30 seconds, or alternatively can be refreshed using the refresh button located on the right bottom corner.
