@@ -30,6 +30,7 @@ At launch the app requires to you make a selection in the NavigationView, select
     - Show or Stream and Export logs from Jamf Protect
     - Provides a way to test Threat Prevention by generating and executing an EICAR test
     - Provides a way to test Analytics for Jamf Protect by creating a LaunchAgent
+    - Provides a way to test Web Protection for Jamf Protect
     - Test connectivity to SIEM/Webhook solutions using HTTP
     - Initiate and review XProtect Remediator Scan Results
   
