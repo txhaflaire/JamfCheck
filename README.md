@@ -16,16 +16,16 @@ You can find the latest version in the [releases](https://github.com/txhaflaire/
 
 #### Usage
 At launch the app requires to you make a selection in the NavigationView, select either
-  - ###### Jamf Pro
-    - Displays Checks that are related to Jamf Pro
+  - ###### Device Management
+    - Displays Checks that are related to Jamf Pro, Jamf School or Jamf Now
     - Show and Export Jamf Pro logs
     - Jamf Network Test, providing an option to export results to CSV as well
 
-  - ###### Jamf Connect
+  - ###### Identity and Access Management
       - Displays Checks that are related to Jamf Connect
       - Show or Stream and Export logs from Jamf Connect
 
-  - ###### Jamf Protect
+  - ###### Endpoint Security
     - Displays Checks that are related to Jamf Protect
     - Show or Stream and Export logs from Jamf Protect
     - Provides a way to test Threat Prevention by generating and executing an EICAR test
@@ -34,7 +34,7 @@ At launch the app requires to you make a selection in the NavigationView, select
     - Test connectivity to SIEM/Webhook solutions using HTTP
     - Initiate and review XProtect Remediator Scan Results
   
-Data is automatically being fetch each 30 seconds, or alternatively can be refreshed using the refresh button located on the right bottom corner.
+Data is automatically being fetch each 30 seconds or the preferred interval set in the Settings menu, or alternatively can be refreshed using the refresh button located on the right bottom corner.
 
 The app does log to Unified Logging. You can view the logs like this:
 
