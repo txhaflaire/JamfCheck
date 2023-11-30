@@ -54,4 +54,4 @@ The app does log to Unified Logging. You can view the logs like this:
 *JamfCheck for Jamf Protect*
 <img width="1027" alt="JamfCheckDark" src="./Images/JamfCheckDark.png">
 *JamfCheck Analyze Diagnostics for Jamf Protect*
-<img width="1027" alt="JamfCheckAnalyzeDiagnostics" src="./Images/JamfCheckAnalyzeDiagnostics.gif">
+<img width="1027" alt="JamfCheckAnalyzeDiagnostics" src="./Images/JamfCheckAnalyzeDiagnostic.gif">
