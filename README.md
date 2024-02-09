@@ -45,7 +45,7 @@ The app does log to Unified Logging. You can view the logs like this:
 
 #### Screenshots
 
-*JamfCheck Auto Update*
+*JamfCheck Device Info*
 <img width="1027" alt="JamfCheckDeviceInfo" src="./Images/JamfCheckDeviceInfo.png">
 *JamfCheck for Jamf Pro*
 <img width="1027" alt="JamfCheck" src="./Images/JamfCheck.png">
