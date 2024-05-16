@@ -1,8 +1,6 @@
 # JamfCheck
-[![Static Badge](https://img.shields.io/badge/SwiftUI-524520?logo=swift)](https://developer.apple.com/xcode/swiftui/)
-![](https://img.shields.io/badge/macOS-10.13%2B-success)&nbsp;![GitHub all releases](https://img.shields.io/github/downloads/txhaflaire/JamfCheck/total)&nbsp;![GitHub](https://img.shields.io/github/license/txhaflaire/JamfCheck)
-[![GitHub release (with filter)](https://img.shields.io/github/v/release/txhaflaire/JamfCheck?color=green&label=Latest%20Release)](https://github.com/txhaflaire/JamfCheck/releases)
 
+![](https://img.shields.io/badge/macOS-10.13%2B-success)&nbsp;![GitHub all releases](https://img.shields.io/github/downloads/txhaflaire/JamfCheck/total)&nbsp;![GitHub](https://img.shields.io/github/license/txhaflaire/JamfCheck)
 
 The "JamfCheck" is a Apple code-signed and notarized macOS app that allows you to easily run a couple of check's for Jamf Pro, Jamf Connect and Jamf Protect in a single app.
 
@@ -16,28 +14,28 @@ You can find the latest version in the [releases](https://github.com/txhaflaire/
 
 #### Usage
 At launch the app requires to you make a selection in the NavigationView, select either
-  - ###### Device Info
-    - Displays generic Device, Endpoint Security and User related information which can be easily copied to clipboard, also provides notifications if Software Updates are available.
-      
-  - ###### Device Management
-    - Displays Checks that are related to Jamf Pro, Jamf School or Jamf Now
+  - ###### Jamf Pro, School or Now
+    - Displays Checks that are related to Jamf Pro, School or Now
     - Show and Export Jamf Pro logs
-    - Jamf Network Test, providing an option to export results to CSV as well
 
-  - ###### Identity and Access Management
+  - ###### Jamf Connect
       - Displays Checks that are related to Jamf Connect
       - Show or Stream and Export logs from Jamf Connect
 
-  - ###### Endpoint Security
+  - ###### Jamf Protect
     - Displays Checks that are related to Jamf Protect
     - Show or Stream and Export logs from Jamf Protect
-    - Provides various detections to be triggered in a single view
-    - Provides a way to test Web Protection for Jamf Protect
+    - Generate and executate EICAR for Threat Prevention test
     - Test connectivity to SIEM/Webhook solutions using HTTP
-    - Initiate and review XProtect Remediator Scan Results
   
-Data is automatically being fetch each 30 seconds or the preferred interval set in the Settings menu, or alternatively can be refreshed using the refresh button located on the right bottom corner (cmd+r)
+#### Managed Login Items
 
+JamfCheck contains a PrivilegedHelper in the application bundle, that allows to run specific as standard user that usually do require root privileges. The helper can be loaded during startup and needs to be either allowed in `System Preferences` in `Login Items` or can be automatically allowed using a Configuration Profile configuring the Managed Login Items.
+
+The related Configuration Profile can be found [here](./Configuration%20Profiles/JamfCheck%20-%20Managed%20Login%20Item.mobileconfig) and can be distributed using Jamf.
+
+
+#### Unified Logging
 The app does log to Unified Logging. You can view the logs like this:
 
 `log show --predicate 'subsystem == "com.txhaflaire.JamfCheck"' --info`
@@ -45,15 +43,11 @@ The app does log to Unified Logging. You can view the logs like this:
 
 #### Screenshots
 
-*JamfCheck Device Info*
-<img width="1027" alt="JamfCheckDeviceInfo" src="./Images/JamfCheckDeviceInfo.png">
+*JamfCheck Auto Update*
+<img width="1027" alt="JamfCheckAutoUpdate" src="./Images/JamfCheckAutoUpdate.png">
 *JamfCheck for Jamf Pro*
 <img width="1027" alt="JamfCheck" src="./Images/JamfCheck.png">
-*JamfCheck for Jamf Pro and running a Network Test*
-<img width="1027" alt="JamfCheckNetworkTest" src="./Images/JamfCheckNetworkTester.png">
 *JamfCheck for Jamf Connect*
 <img width="1027" alt="JamfCheckLight" src="./Images/JamfCheckLight.png">
 *JamfCheck for Jamf Protect*
 <img width="1027" alt="JamfCheckDark" src="./Images/JamfCheckDark.png">
-*JamfCheck Analyze Diagnostics for Jamf Protect*
-<img width="1027" alt="JamfCheckAnalyzeDiagnostics" src="./Images/JamfCheckAnalyzeDiagnostic.gif">
