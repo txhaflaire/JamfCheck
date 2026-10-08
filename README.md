@@ -14,8 +14,8 @@ You can find the latest version in the [releases](https://github.com/txhaflaire/
 
 #### Usage
 At launch the app requires to you make a selection in the NavigationView, select either
-  - ###### Jamf Pro
-    - Displays Checks that are related to Jamf Pro
+  - ###### Jamf Pro, School or Now
+    - Displays Checks that are related to Jamf Pro, School or Now
     - Show and Export Jamf Pro logs
     - Jamf Network Test
 
@@ -30,12 +30,14 @@ At launch the app requires to you make a selection in the NavigationView, select
     - Provides a way to test Analytics for Jamf Protect by creating a LaunchAgent
     - Test connectivity to SIEM/Webhook solutions using HTTP
   
-Data is automatically being fetch each 30 seconds, or alternatively can be refreshed using the refresh button located on the right bottom corner.
+#### Managed Login Items
 
-#### Known Issues / to be improved
-These are known issues or areas that is still in development
-    - Improving resource usage once Log Stream is being used
+JamfCheck contains a PrivilegedHelper in the application bundle, that allows to run specific as standard user that usually do require root privileges. The helper can be loaded during startup and needs to be either allowed in `System Preferences` in `Login Items` or can be automatically allowed using a Configuration Profile configuring the Managed Login Items.
 
+The related Configuration Profile can be found [here](./Configuration%20Profiles/JamfCheck%20-%20Managed%20Login%20Item.mobileconfig) and can be distributed using Jamf.
+
+
+#### Unified Logging
 The app does log to Unified Logging. You can view the logs like this:
 
 `log show --predicate 'subsystem == "com.txhaflaire.JamfCheck"' --info`
@@ -43,11 +45,11 @@ The app does log to Unified Logging. You can view the logs like this:
 
 #### Screenshots
 
-*JamfCheck Auto Update*
-<img width="1027" alt="JamfCheckAutoUpdate" src="./Images/JamfCheckAutoUpdate.png">
+*JamfCheck Device Overview*
+<img width="1027" alt="JamfCheckAutoUpdate" src="./Images/JamfCheckDevice.png">
 *JamfCheck for Jamf Pro*
-<img width="1027" alt="JamfCheck" src="./Images/JamfCheck.png">
+<img width="1027" alt="JamfCheck" src="./Images/JamfCheckPro.png">
 *JamfCheck for Jamf Connect*
-<img width="1027" alt="JamfCheckLight" src="./Images/JamfCheckLight.png">
+<img width="1027" alt="JamfCheckLight" src="./Images/JamfCheckConnect.png">
 *JamfCheck for Jamf Protect*
-<img width="1027" alt="JamfCheckDark" src="./Images/JamfCheckDark.png">
+<img width="1027" alt="JamfCheckDark" src="./Images/JamfCheckProtect.png">
